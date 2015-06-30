@@ -1,3 +1,19 @@
+.icon {
+    font-family: "testfont";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+@mixin icon-custom($char) {
+    &:before {
+        content: $char;
+    }
+}
 
 
 @font-face {
@@ -10,168 +26,149 @@
 }
 
 
-$icon-icon-angle-down: "";
-.icon-icon-angle-down { @include icon-custom($icon-angle-down); }
+$icon-angle-down: "";
+.icon-angle-down { @include icon-custom($icon-angle-down); }
 
-$icon-icon-angle-left: "";
-.icon-icon-angle-left { @include icon-custom($icon-angle-left); }
+$icon-angle-left: "";
+.icon-angle-left { @include icon-custom($icon-angle-left); }
 
-$icon-icon-angle-right: "";
-.icon-icon-angle-right { @include icon-custom($icon-angle-right); }
+$icon-angle-right: "";
+.icon-angle-right { @include icon-custom($icon-angle-right); }
 
-$icon-icon-angle-up: "";
-.icon-icon-angle-up { @include icon-custom($icon-angle-up); }
+$icon-angle-up: "";
+.icon-angle-up { @include icon-custom($icon-angle-up); }
 
-$icon-icon-bell: "";
-.icon-icon-bell { @include icon-custom($icon-bell); }
+$icon-bell: "";
+.icon-bell { @include icon-custom($icon-bell); }
 
-$icon-icon-camera-retro: "";
-.icon-icon-camera-retro { @include icon-custom($icon-camera-retro); }
+$icon-camera-retro: "";
+.icon-camera-retro { @include icon-custom($icon-camera-retro); }
 
-$icon-icon-camera: "";
-.icon-icon-camera { @include icon-custom($icon-camera); }
+$icon-camera: "";
+.icon-camera { @include icon-custom($icon-camera); }
 
-$icon-icon-caret-right: "";
-.icon-icon-caret-right { @include icon-custom($icon-caret-right); }
+$icon-caret-right: "";
+.icon-caret-right { @include icon-custom($icon-caret-right); }
 
-$icon-icon-clock-o: "";
-.icon-icon-clock-o { @include icon-custom($icon-clock-o); }
+$icon-clock-o: "";
+.icon-clock-o { @include icon-custom($icon-clock-o); }
 
-$icon-icon-cogs: "";
-.icon-icon-cogs { @include icon-custom($icon-cogs); }
+$icon-cogs: "";
+.icon-cogs { @include icon-custom($icon-cogs); }
 
-$icon-icon-comments-alt: "";
-.icon-icon-comments-alt { @include icon-custom($icon-comments-alt); }
+$icon-comments-alt: "";
+.icon-comments-alt { @include icon-custom($icon-comments-alt); }
 
-$icon-icon-download: "";
-.icon-icon-download { @include icon-custom($icon-download); }
+$icon-download: "";
+.icon-download { @include icon-custom($icon-download); }
 
-$icon-icon-edit: "";
-.icon-icon-edit { @include icon-custom($icon-edit); }
+$icon-edit: "";
+.icon-edit { @include icon-custom($icon-edit); }
 
-$icon-icon-envelope-alt: "";
-.icon-icon-envelope-alt { @include icon-custom($icon-envelope-alt); }
+$icon-envelope-alt: "";
+.icon-envelope-alt { @include icon-custom($icon-envelope-alt); }
 
-$icon-icon-exchange: "";
-.icon-icon-exchange { @include icon-custom($icon-exchange); }
+$icon-exchange: "";
+.icon-exchange { @include icon-custom($icon-exchange); }
 
-$icon-icon-exclamation-triangle: "";
-.icon-icon-exclamation-triangle { @include icon-custom($icon-exclamation-triangle); }
+$icon-exclamation-triangle: "";
+.icon-exclamation-triangle { @include icon-custom($icon-exclamation-triangle); }
 
-$icon-icon-external-link: "";
-.icon-icon-external-link { @include icon-custom($icon-external-link); }
+$icon-external-link: "";
+.icon-external-link { @include icon-custom($icon-external-link); }
 
-$icon-icon-facebook: "";
-.icon-icon-facebook { @include icon-custom($icon-facebook); }
+$icon-facebook: "";
+.icon-facebook { @include icon-custom($icon-facebook); }
 
-$icon-icon-file-alt: "";
-.icon-icon-file-alt { @include icon-custom($icon-file-alt); }
+$icon-file-alt: "";
+.icon-file-alt { @include icon-custom($icon-file-alt); }
 
-$icon-icon-google-plus: "";
-.icon-icon-google-plus { @include icon-custom($icon-google-plus); }
+$icon-google-plus: "";
+.icon-google-plus { @include icon-custom($icon-google-plus); }
 
-$icon-icon-group: "";
-.icon-icon-group { @include icon-custom($icon-group); }
+$icon-group: "";
+.icon-group { @include icon-custom($icon-group); }
 
-$icon-icon-home: "";
-.icon-icon-home { @include icon-custom($icon-home); }
+$icon-home: "";
+.icon-home { @include icon-custom($icon-home); }
 
-$icon-icon-info-sign: "";
-.icon-icon-info-sign { @include icon-custom($icon-info-sign); }
+$icon-info-sign: "";
+.icon-info-sign { @include icon-custom($icon-info-sign); }
 
-$icon-icon-link: "";
-.icon-icon-link { @include icon-custom($icon-link); }
+$icon-link: "";
+.icon-link { @include icon-custom($icon-link); }
 
-$icon-icon-lrqdo-cross: "";
-.icon-icon-lrqdo-cross { @include icon-custom($icon-lrqdo-cross); }
+$icon-lrqdo-cross: "";
+.icon-lrqdo-cross { @include icon-custom($icon-lrqdo-cross); }
 
-$icon-icon-lrqdo-help: "";
-.icon-icon-lrqdo-help { @include icon-custom($icon-lrqdo-help); }
+$icon-lrqdo-help: "";
+.icon-lrqdo-help { @include icon-custom($icon-lrqdo-help); }
 
-$icon-icon-lrqdo-panier: "";
-.icon-icon-lrqdo-panier { @include icon-custom($icon-lrqdo-panier); }
+$icon-lrqdo-panier: "";
+.icon-lrqdo-panier { @include icon-custom($icon-lrqdo-panier); }
 
-$icon-icon-lrqdo-photo-upload-error: "";
-.icon-icon-lrqdo-photo-upload-error { @include icon-custom($icon-lrqdo-photo-upload-error); }
+$icon-lrqdo-photo-upload-error: "";
+.icon-lrqdo-photo-upload-error { @include icon-custom($icon-lrqdo-photo-upload-error); }
 
-$icon-icon-lrqdo-test: "";
-.icon-icon-lrqdo-test { @include icon-custom($icon-lrqdo-test); }
+$icon-lrqdo-test: "";
+.icon-lrqdo-test { @include icon-custom($icon-lrqdo-test); }
 
-$icon-icon-map-marker: "";
-.icon-icon-map-marker { @include icon-custom($icon-map-marker); }
+$icon-map-marker: "";
+.icon-map-marker { @include icon-custom($icon-map-marker); }
 
-$icon-icon-minus-sign: "";
-.icon-icon-minus-sign { @include icon-custom($icon-minus-sign); }
+$icon-minus-sign: "";
+.icon-minus-sign { @include icon-custom($icon-minus-sign); }
 
-$icon-icon-ok-sign: "";
-.icon-icon-ok-sign { @include icon-custom($icon-ok-sign); }
+$icon-ok-sign: "";
+.icon-ok-sign { @include icon-custom($icon-ok-sign); }
 
-$icon-icon-ok: "";
-.icon-icon-ok { @include icon-custom($icon-ok); }
+$icon-ok: "";
+.icon-ok { @include icon-custom($icon-ok); }
 
-$icon-icon-pencil: "";
-.icon-icon-pencil { @include icon-custom($icon-pencil); }
+$icon-pencil: "";
+.icon-pencil { @include icon-custom($icon-pencil); }
 
-$icon-icon-phone: "";
-.icon-icon-phone { @include icon-custom($icon-phone); }
+$icon-phone: "";
+.icon-phone { @include icon-custom($icon-phone); }
 
-$icon-icon-picture: "";
-.icon-icon-picture { @include icon-custom($icon-picture); }
+$icon-picture: "";
+.icon-picture { @include icon-custom($icon-picture); }
 
-$icon-icon-pinterest: "";
-.icon-icon-pinterest { @include icon-custom($icon-pinterest); }
+$icon-pinterest: "";
+.icon-pinterest { @include icon-custom($icon-pinterest); }
 
-$icon-icon-plus-sign: "";
-.icon-icon-plus-sign { @include icon-custom($icon-plus-sign); }
+$icon-plus-sign: "";
+.icon-plus-sign { @include icon-custom($icon-plus-sign); }
 
-$icon-icon-refresh: "";
-.icon-icon-refresh { @include icon-custom($icon-refresh); }
+$icon-refresh: "";
+.icon-refresh { @include icon-custom($icon-refresh); }
 
-$icon-icon-remove-sign: "";
-.icon-icon-remove-sign { @include icon-custom($icon-remove-sign); }
+$icon-remove-sign: "";
+.icon-remove-sign { @include icon-custom($icon-remove-sign); }
 
-$icon-icon-remove: "";
-.icon-icon-remove { @include icon-custom($icon-remove); }
+$icon-remove: "";
+.icon-remove { @include icon-custom($icon-remove); }
 
-$icon-icon-reorder: "";
-.icon-icon-reorder { @include icon-custom($icon-reorder); }
+$icon-reorder: "";
+.icon-reorder { @include icon-custom($icon-reorder); }
 
-$icon-icon-repeat: "";
-.icon-icon-repeat { @include icon-custom($icon-repeat); }
+$icon-repeat: "";
+.icon-repeat { @include icon-custom($icon-repeat); }
 
-$icon-icon-search: "";
-.icon-icon-search { @include icon-custom($icon-search); }
+$icon-search: "";
+.icon-search { @include icon-custom($icon-search); }
 
-$icon-icon-shopping-cart: "";
-.icon-icon-shopping-cart { @include icon-custom($icon-shopping-cart); }
+$icon-spinner: "";
+.icon-spinner { @include icon-custom($icon-spinner); }
 
-$icon-icon-spinner: "";
-.icon-icon-spinner { @include icon-custom($icon-spinner); }
+$icon-star: "";
+.icon-star { @include icon-custom($icon-star); }
 
-$icon-icon-star: "";
-.icon-icon-star { @include icon-custom($icon-star); }
+$icon-th: "";
+.icon-th { @include icon-custom($icon-th); }
 
-$icon-icon-th: "";
-.icon-icon-th { @include icon-custom($icon-th); }
+$icon-twitter: "";
+.icon-twitter { @include icon-custom($icon-twitter); }
 
-$icon-icon-twitter: "";
-.icon-icon-twitter { @include icon-custom($icon-twitter); }
-
-$icon-icon-user: "";
-.icon-icon-user { @include icon-custom($icon-user); }
-
-
-@mixin icon-custom($char) {
-    font-family: "testfont";
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-
-    &:before {
-        content: $char;
-    }
-}
+$icon-user: "";
+.icon-user { @include icon-custom($icon-user); }

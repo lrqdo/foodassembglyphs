@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= fontName %> Specimen</title>
+    <link rel="stylesheet" href="../css/foodAssembGlyphs.css">
+</head>
+<body>
+    <h1><%= fontName %> Specimen</h1>
+
+    <% _.each(glyphs, function(glyph) { %>
+        <div>
+            <%= glyph.name %>
+            <p class="icon icon-<%= glyph.name %>"></p>
+        </div>
+    <% }); %>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+@charset "UTF-8";
+.icon {
+  font-family: "testfont";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+@font-face {
+  font-family: "testfont";
+  src: url("../fonts/testfont.eot");
+  src: url("../fonts/testfont.eot?#iefix") format("eot"), url("../fonts/testfont.woff") format("woff"), url("../fonts/testfont.ttf") format("truetype"), url("../fonts/testfont.svg#testfont") format("svg"); }
+
+.icon-angle-down:before {
+  content: ""; }
+
+.icon-angle-left:before {
+  content: ""; }
+
+.icon-angle-right:before {
+  content: ""; }
+
+.icon-angle-up:before {
+  content: ""; }
+
+.icon-bell:before {
+  content: ""; }
+
+.icon-camera-retro:before {
+  content: ""; }
+
+.icon-camera:before {
+  content: ""; }
+
+.icon-caret-right:before {
+  content: ""; }
+
+.icon-clock-o:before {
+  content: ""; }
+
+.icon-cogs:before {
+  content: ""; }
+
+.icon-comments-alt:before {
+  content: ""; }
+
+.icon-download:before {
+  content: ""; }
+
+.icon-edit:before {
+  content: ""; }
+
+.icon-envelope-alt:before {
+  content: ""; }
+
+.icon-exchange:before {
+  content: ""; }
+
+.icon-exclamation-triangle:before {
+  content: ""; }
+
+.icon-external-link:before {
+  content: ""; }
+
+.icon-facebook:before {
+  content: ""; }
+
+.icon-file-alt:before {
+  content: ""; }
+
+.icon-google-plus:before {
+  content: ""; }
+
+.icon-group:before {
+  content: ""; }
+
+.icon-home:before {
+  content: ""; }
+
+.icon-info-sign:before {
+  content: ""; }
+
+.icon-link:before {
+  content: ""; }
+
+.icon-lrqdo-cross:before {
+  content: ""; }
+
+.icon-lrqdo-help:before {
+  content: ""; }
+
+.icon-lrqdo-panier:before {
+  content: ""; }
+
+.icon-lrqdo-photo-upload-error:before {
+  content: ""; }
+
+.icon-lrqdo-test:before {
+  content: ""; }
+
+.icon-map-marker:before {
+  content: ""; }
+
+.icon-minus-sign:before {
+  content: ""; }
+
+.icon-ok-sign:before {
+  content: ""; }
+
+.icon-ok:before {
+  content: ""; }
+
+.icon-pencil:before {
+  content: ""; }
+
+.icon-phone:before {
+  content: ""; }
+
+.icon-picture:before {
+  content: ""; }
+
+.icon-pinterest:before {
+  content: ""; }
+
+.icon-plus-sign:before {
+  content: ""; }
+
+.icon-refresh:before {
+  content: ""; }
+
+.icon-remove-sign:before {
+  content: ""; }
+
+.icon-remove:before {
+  content: ""; }
+
+.icon-reorder:before {
+  content: ""; }
+
+.icon-repeat:before {
+  content: ""; }
+
+.icon-search:before {
+  content: ""; }
+
+.icon-spinner:before {
+  content: ""; }
+
+.icon-star:before {
+  content: ""; }
+
+.icon-th:before {
+  content: ""; }
+
+.icon-twitter:before {
+  content: ""; }
+
+.icon-user:before {
+  content: ""; }
