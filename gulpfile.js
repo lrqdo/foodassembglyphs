@@ -9,10 +9,9 @@ const onFinished = require('finished');
 const sass = require('gulp-sass');
 
 const config = {
-    fontFaceName    : 'testfont',
-    fontPath        : '../fonts/',
-    iconPrefix      : 'icontest',
-    iconPrefixLegacy: 'icon',
+    fontFaceName: 'foodassembglyphs',
+    fontPath    : '../fonts/',
+    iconPrefix  : 'icontest',
 };
 
 gulp.task('font', function generateFont(cb) {

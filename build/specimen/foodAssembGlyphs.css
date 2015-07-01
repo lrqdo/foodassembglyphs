@@ -4,7 +4,7 @@
   background-position: 0% 0%;
   background-repeat: repeat;
   display: inline;
-  font-family: 'testfont';
+  font-family: 'foodassembglyphs';
   -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-variant: normal;
@@ -18,9 +18,9 @@
   width: auto; }
 
 @font-face {
-  font-family: 'testfont';
-  src: url("../fonts/testfont.eot");
-  src: url("../fonts/testfont.eot?#iefix") format("eot"), url("../fonts/testfont.woff") format("woff"), url("../fonts/testfont.ttf") format("truetype"), url("../fonts/testfont.svg#testfont") format("svg"); }
+  font-family: 'foodassembglyphs';
+  src: url("../fonts/foodassembglyphs.eot");
+  src: url("../fonts/foodassembglyphs.eot?#iefix") format("eot"), url("../fonts/foodassembglyphs.woff") format("woff"), url("../fonts/foodassembglyphs.ttf") format("truetype"), url("../fonts/foodassembglyphs.svg#foodassembglyphs") format("svg"); }
 
 .icontest-angle-down:before {
   content: ""; }
