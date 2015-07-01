@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title><%= fontFaceName %> Specimen</title>
-    <link rel="stylesheet" href="../css/foodAssembGlyphs.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="foodAssembGlyphs.css">
     <style>
         body {
             font-family: sans-serif;
             font-size: 20pt;
+        }
+        td {
+            border: 1px solid red;
         }
     </style>
 </head>
@@ -15,10 +19,16 @@
     <h1><%= fontFaceName %> Specimen</h1>
 
     <table>
+        <tr>
+            <th>name</th>
+            <th>new</th>
+            <th>legacy</th>
+        </tr>
     <% _.each(glyphs, function(glyph) { %>
         <tr>
             <td><%= glyph.name %></td>
             <td><p class="<%= iconPrefix %> <%= iconPrefix %>-<%= glyph.name %>"></p></td>
+            <td><p class="<%= iconPrefixLegacy %> <%= iconPrefixLegacy %>-<%= glyph.name %>"></p></td>
         </tr>
     <% }); %>
     </table>

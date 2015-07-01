@@ -9,9 +9,10 @@ const onFinished = require('finished');
 const sass = require('gulp-sass');
 
 const config = {
-    fontFaceName: 'testfont',
-    fontPath    : '../fonts/',
-    iconPrefix  : 'icontest',
+    fontFaceName    : 'testfont',
+    fontPath        : '../fonts/',
+    iconPrefix      : 'icontest',
+    iconPrefixLegacy: 'icon',
 };
 
 gulp.task('font', function generateFont(cb) {
@@ -40,6 +41,7 @@ gulp.task('font', function generateFont(cb) {
         .pipe(iconfont({
             fontName     : config.fontFaceName,
             appendUnicode: true,
+            normalize    : true,
         }))
         .on('glyphs', buildTemplates)
         .pipe(gulp.dest('build/fonts/'));
@@ -48,7 +50,7 @@ gulp.task('font', function generateFont(cb) {
 gulp.task('css', ['font'], function() {
     gulp.src('build/sass/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('build/css'));
+        .pipe(gulp.dest('build/specimen'));
 });
 
 gulp.task('default', ['font', 'css'], function() {

@@ -9,7 +9,7 @@
     font-variant: normal;
     font-weight: normal;
     height: auto;
-    line-height: normal;
+    line-height: 2;
     margin-top: 0;
     speak: none;
     text-transform: none;
@@ -117,9 +117,6 @@ $icontest-lrqdo-panier: '';
 
 $icontest-lrqdo-photo-upload-error: '';
 .icontest-lrqdo-photo-upload-error { @include icon-custom($icontest-lrqdo-photo-upload-error); }
-
-$icontest-lrqdo-test: '';
-.icontest-lrqdo-test { @include icon-custom($icontest-lrqdo-test); }
 
 $icontest-map-marker: '';
 .icontest-map-marker { @include icon-custom($icontest-map-marker); }
