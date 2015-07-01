@@ -1,5 +1,5 @@
 {
-  "name": "foodassembglyphs",
+  "name": "@lrqdo/foodassembglyphs",
   "version": "1.0.0",
   "description": "tool suite to generate our webfont",
   "main": "gulpfile.js",

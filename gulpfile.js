@@ -11,7 +11,7 @@ const sass = require('gulp-sass');
 const config = {
     fontFaceName: 'foodassembglyphs',
     fontPath    : '../fonts/',
-    iconPrefix  : 'icontest',
+    iconPrefix  : 'icon',
 };
 
 gulp.task('font', function generateFont(cb) {
@@ -20,10 +20,9 @@ gulp.task('font', function generateFont(cb) {
                 glyphs: glyphs,
         }, config);
 
-        let scssStream = gulp.src('templates/foodAssembGlyphs.scss')
+        let scssStream = gulp.src('templates/*.scss')
             .pipe(consolidate('underscore', templateData))
             .pipe(gulp.dest('build/sass'));
-            // .on('complete', function() { cb(); console.log('youpi');});
 
         let htmlStream = gulp.src('templates/specimen.html')
             .pipe(consolidate('underscore', templateData))
@@ -47,7 +46,7 @@ gulp.task('font', function generateFont(cb) {
 });
 
 gulp.task('css', ['font'], function() {
-    gulp.src('build/sass/*.scss')
+    gulp.src('build/sass/main.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('build/specimen'));
 });
