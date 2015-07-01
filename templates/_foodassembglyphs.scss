@@ -34,6 +34,6 @@
 }
 
 <% _.each(glyphs, function(glyph) { %>
-$<%= iconPrefix %>-<%= glyph.name %>: '<%= glyph.unicode %>';
-.<%= iconPrefix %>-<%= glyph.name %> { @include icon-custom($<%= iconPrefix %>-<%= glyph.name %>); }
+$<%= iconPrefix %>-<%= glyph.name %>-value: '<%= glyph.unicode %>';
+.<%= iconPrefix %>-<%= glyph.name %> { @include icon-custom($<%= iconPrefix %>-<%= glyph.name %>-value); }
 <% }); %>
