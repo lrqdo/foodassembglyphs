@@ -1,23 +1,24 @@
 'use strict';
 
+const _ = require('underscore');
+const consolidate = require('gulp-consolidate');
 const gulp = require('gulp');
 const iconfont = require('gulp-iconfont');
-const consolidate = require('gulp-consolidate');
-const onFinished = require('finished');
 const merge = require('merge-stream');
+const onFinished = require('finished');
 const sass = require('gulp-sass');
 
 const config = {
     fontFaceName: 'testfont',
+    fontPath    : '../fonts/',
+    iconPrefix  : 'icontest',
 };
 
 gulp.task('font', function generateFont(cb) {
     function buildTemplates(glyphs) {
-        let templateData = {
-                glyphs  : glyphs,
-                fontName: config.fontFaceName,
-                fontPath: '../fonts/',
-            };
+        let templateData = _.extend({
+                glyphs: glyphs,
+        }, config);
 
         let scssStream = gulp.src('templates/foodAssembGlyphs.scss')
             .pipe(consolidate('underscore', templateData))

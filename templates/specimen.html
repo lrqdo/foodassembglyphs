@@ -2,18 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><%= fontName %> Specimen</title>
+    <title><%= fontFaceName %> Specimen</title>
     <link rel="stylesheet" href="../css/foodAssembGlyphs.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 20pt;
+        }
+    </style>
 </head>
 <body>
-    <h1><%= fontName %> Specimen</h1>
+    <h1><%= fontFaceName %> Specimen</h1>
 
+    <table>
     <% _.each(glyphs, function(glyph) { %>
-        <div>
-            <%= glyph.name %>
-            <p class="icon icon-<%= glyph.name %>"></p>
-        </div>
+        <tr>
+            <td><%= glyph.name %></td>
+            <td><p class="<%= iconPrefix %> <%= iconPrefix %>-<%= glyph.name %>"></p></td>
+        </tr>
     <% }); %>
-
+    </table>
 </body>
 </html>

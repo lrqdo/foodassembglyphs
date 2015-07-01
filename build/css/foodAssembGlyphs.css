@@ -1,162 +1,170 @@
 @charset "UTF-8";
-.icon {
-  font-family: "testfont";
-  speak: none;
+.icontest {
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  display: inline;
+  font-family: 'testfont';
+  -webkit-font-smoothing: antialiased;
   font-style: normal;
-  font-weight: normal;
   font-variant: normal;
+  font-weight: normal;
+  height: auto;
+  line-height: normal;
+  margin-top: 0;
+  speak: none;
   text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased; }
+  vertical-align: baseline;
+  width: auto; }
 
 @font-face {
-  font-family: "testfont";
+  font-family: 'testfont';
   src: url("../fonts/testfont.eot");
   src: url("../fonts/testfont.eot?#iefix") format("eot"), url("../fonts/testfont.woff") format("woff"), url("../fonts/testfont.ttf") format("truetype"), url("../fonts/testfont.svg#testfont") format("svg"); }
 
-.icon-angle-down:before {
+.icontest-angle-down:before {
   content: ""; }
 
-.icon-angle-left:before {
+.icontest-angle-left:before {
   content: ""; }
 
-.icon-angle-right:before {
+.icontest-angle-right:before {
   content: ""; }
 
-.icon-angle-up:before {
+.icontest-angle-up:before {
   content: ""; }
 
-.icon-bell:before {
+.icontest-bell:before {
   content: ""; }
 
-.icon-camera-retro:before {
+.icontest-camera-retro:before {
   content: ""; }
 
-.icon-camera:before {
+.icontest-camera:before {
   content: ""; }
 
-.icon-caret-right:before {
+.icontest-caret-right:before {
   content: ""; }
 
-.icon-clock-o:before {
+.icontest-clock-o:before {
   content: ""; }
 
-.icon-cogs:before {
+.icontest-cogs:before {
   content: ""; }
 
-.icon-comments-alt:before {
+.icontest-comments-alt:before {
   content: ""; }
 
-.icon-download:before {
+.icontest-download:before {
   content: ""; }
 
-.icon-edit:before {
+.icontest-edit:before {
   content: ""; }
 
-.icon-envelope-alt:before {
+.icontest-envelope-alt:before {
   content: ""; }
 
-.icon-exchange:before {
+.icontest-exchange:before {
   content: ""; }
 
-.icon-exclamation-triangle:before {
+.icontest-exclamation-triangle:before {
   content: ""; }
 
-.icon-external-link:before {
+.icontest-external-link:before {
   content: ""; }
 
-.icon-facebook:before {
+.icontest-facebook:before {
   content: ""; }
 
-.icon-file-alt:before {
+.icontest-file-alt:before {
   content: ""; }
 
-.icon-google-plus:before {
+.icontest-google-plus:before {
   content: ""; }
 
-.icon-group:before {
+.icontest-group:before {
   content: ""; }
 
-.icon-home:before {
+.icontest-home:before {
   content: ""; }
 
-.icon-info-sign:before {
+.icontest-info-sign:before {
   content: ""; }
 
-.icon-link:before {
+.icontest-link:before {
   content: ""; }
 
-.icon-lrqdo-cross:before {
+.icontest-lrqdo-cross:before {
   content: ""; }
 
-.icon-lrqdo-help:before {
+.icontest-lrqdo-help:before {
   content: ""; }
 
-.icon-lrqdo-panier:before {
+.icontest-lrqdo-panier:before {
   content: ""; }
 
-.icon-lrqdo-photo-upload-error:before {
+.icontest-lrqdo-photo-upload-error:before {
   content: ""; }
 
-.icon-lrqdo-test:before {
+.icontest-lrqdo-test:before {
   content: ""; }
 
-.icon-map-marker:before {
+.icontest-map-marker:before {
   content: ""; }
 
-.icon-minus-sign:before {
+.icontest-minus-sign:before {
   content: ""; }
 
-.icon-ok-sign:before {
+.icontest-ok-sign:before {
   content: ""; }
 
-.icon-ok:before {
+.icontest-ok:before {
   content: ""; }
 
-.icon-pencil:before {
+.icontest-pencil:before {
   content: ""; }
 
-.icon-phone:before {
+.icontest-phone:before {
   content: ""; }
 
-.icon-picture:before {
+.icontest-picture:before {
   content: ""; }
 
-.icon-pinterest:before {
+.icontest-pinterest:before {
   content: ""; }
 
-.icon-plus-sign:before {
+.icontest-plus-sign:before {
   content: ""; }
 
-.icon-refresh:before {
+.icontest-refresh:before {
   content: ""; }
 
-.icon-remove-sign:before {
+.icontest-remove-sign:before {
   content: ""; }
 
-.icon-remove:before {
+.icontest-remove:before {
   content: ""; }
 
-.icon-reorder:before {
+.icontest-reorder:before {
   content: ""; }
 
-.icon-repeat:before {
+.icontest-repeat:before {
   content: ""; }
 
-.icon-search:before {
+.icontest-search:before {
   content: ""; }
 
-.icon-spinner:before {
+.icontest-spinner:before {
   content: ""; }
 
-.icon-star:before {
+.icontest-star:before {
   content: ""; }
 
-.icon-th:before {
+.icontest-th:before {
   content: ""; }
 
-.icon-twitter:before {
+.icontest-twitter:before {
   content: ""; }
 
-.icon-user:before {
+.icontest-user:before {
   content: ""; }

@@ -8,16 +8,17 @@
     "gulp-consolidate": "^0.1.2",
     "gulp-iconfont": "^3.0.2",
     "gulp-sass": "^2.0.3",
-    "merge-stream": "^0.1.7"
+    "merge-stream": "^0.1.7",
+    "finished": "^1.2.2"
   },
   "devDependencies": {
     "babel-eslint": "^3.1.19",
-    "finished": "^1.2.2",
     "styleguide": "lrqdo/styleguide",
     "underscore": "^1.8.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cp node_modules/styleguide/scss/linters/.scss-lint.yml .scss-lint.yml"
   },
   "repository": {
     "type": "git",

@@ -1,12 +1,20 @@
-.icon {
-    font-family: "<%= fontName %>";
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+.<%= iconPrefix %> {
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    display: inline;
+    font-family: '<%= fontFaceName %>';
     -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: auto;
+    line-height: normal;
+    margin-top: 0;
+    speak: none;
+    text-transform: none;
+    vertical-align: baseline;
+    width: auto;
 }
 
 @mixin icon-custom($char) {
@@ -17,15 +25,15 @@
 
 
 @font-face {
-    font-family: "<%= fontName %>";
-    src: url('<%= fontPath %><%= fontName %>.eot');
-    src: url('<%= fontPath %><%= fontName %>.eot?#iefix') format('eot'),
-        url('<%= fontPath %><%= fontName %>.woff') format('woff'),
-        url('<%= fontPath %><%= fontName %>.ttf') format('truetype'),
-        url('<%= fontPath %><%= fontName %>.svg#<%= fontName %>') format('svg');
+    font-family: '<%= fontFaceName %>';
+    src: url('<%= fontPath %><%= fontFaceName %>.eot');
+    src: url('<%= fontPath %><%= fontFaceName %>.eot?#iefix') format('eot'),
+        url('<%= fontPath %><%= fontFaceName %>.woff') format('woff'),
+        url('<%= fontPath %><%= fontFaceName %>.ttf') format('truetype'),
+        url('<%= fontPath %><%= fontFaceName %>.svg#<%= fontFaceName %>') format('svg');
 }
 
 <% _.each(glyphs, function(glyph) { %>
-$icon-<%= glyph.name %>: "<%= glyph.unicode %>";
-.icon-<%= glyph.name %> { @include icon-custom($icon-<%= glyph.name %>); }
+$<%= iconPrefix %>-<%= glyph.name %>: '<%= glyph.unicode %>';
+.<%= iconPrefix %>-<%= glyph.name %> { @include icon-custom($<%= iconPrefix %>-<%= glyph.name %>); }
 <% }); %>
