@@ -10,15 +10,15 @@
     "gulp-sass": "^2.0.3",
     "merge-stream": "^0.1.7",
     "finished": "^1.2.2",
-    "styleguide": "lrqdo/styleguide",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
+    "styleguide": "lrqdo/styleguide",
     "babel-eslint": "^3.1.19"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "cp node_modules/styleguide/scss/linters/.scss-lint.yml .scss-lint.yml"
+    "postinstall": "cp node_modules/styleguide/scss/linters/.scss-lint.yml .scss-lint.yml || true"
   },
   "repository": {
     "type": "git",
