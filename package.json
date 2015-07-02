@@ -2,7 +2,7 @@
   "name": "@lrqdo/foodassembglyphs",
   "version": "1.0.0",
   "description": "tool suite to generate our webfont",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "dependencies": {
     "finished": "^1.2.2",
     "gulp": "^3.9.0",
