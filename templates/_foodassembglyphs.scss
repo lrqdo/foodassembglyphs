@@ -1,4 +1,4 @@
-.<%= iconPrefix %> {
+@mixin iconfont() {
     background-image: none;
     background-position: 0% 0%;
     background-repeat: repeat;
@@ -9,7 +9,7 @@
     font-variant: normal;
     font-weight: normal;
     height: auto;
-    line-height: 2;
+    line-height: normal;
     margin-top: 0;
     speak: none;
     text-transform: none;
@@ -17,12 +17,14 @@
     width: auto;
 }
 
-@mixin icon-custom($char) {
+@mixin icon($char) {
     &:before {
         content: $char;
     }
 }
 
+$iconfont: '<%= fontFaceName %>';
+$foodassembglyphs: '<%= fontFaceName %>';
 
 @font-face {
     font-family: '<%= fontFaceName %>';
@@ -33,7 +35,11 @@
         url('<%= fontPath %><%= fontFaceName %>.svg#<%= fontFaceName %>') format('svg');
 }
 
+.<%= iconPrefix %> {
+    @include iconfont();
+}
+
 <% _.each(glyphs, function(glyph) { %>
 $<%= iconPrefix %>-<%= glyph.name %>-value: '<%= glyph.unicode %>';
-.<%= iconPrefix %>-<%= glyph.name %> { @include icon-custom($<%= iconPrefix %>-<%= glyph.name %>-value); }
+.<%= iconPrefix %>-<%= glyph.name %> { @include icon($<%= iconPrefix %>-<%= glyph.name %>-value); }
 <% }); %>
