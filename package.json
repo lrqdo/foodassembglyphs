@@ -14,7 +14,7 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
-    "babel-eslint": "^3.1.19",
+    "babel-eslint": "^3.1.19"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
