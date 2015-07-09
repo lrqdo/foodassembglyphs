@@ -11,11 +11,6 @@ const insert        = require('gulp-insert');
 const defaultConfig = require('./config');
 
 function generateFont(cb, customConfig) {
-    // let paths = _.clone(config.taskPaths);
-
-    // Object.keys(paths).forEach(function(key) {
-    //     paths[key] = path.join(__dirname, paths[key]);
-    // });
     let config = _.extend(_.clone(defaultConfig), customConfig);
     let paths = {};
 
@@ -34,12 +29,17 @@ function generateFont(cb, customConfig) {
             .pipe(insert.prepend(`//${config.generatedWarning}\n`))
             .pipe(gulp.dest(paths.destScss));
 
-        let htmlStream = gulp.src(paths.srcHtmlSpecimen)
-            .pipe(consolidate('underscore', templateData))
-            .pipe(insert.prepend(`<!--${config.generatedWarning}-->\n`))
-            .pipe(gulp.dest(paths.destHtmlSpecimen));
+        let allStreams = merge(scssStream);
 
-        onFinished(merge(scssStream, htmlStream), function(err) {
+        if (config.pathDestHtmlSpecimen) {
+            let htmlStream = gulp.src(paths.srcHtmlSpecimen)
+                .pipe(consolidate('underscore', templateData))
+                .pipe(insert.prepend(`<!--${config.generatedWarning}-->\n`))
+                .pipe(gulp.dest(paths.destHtmlSpecimen));
+            allStreams.add(htmlStream);
+        }
+
+        onFinished(allStreams, function(err) {
             cb(err);
         });
     }
