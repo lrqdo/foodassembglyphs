@@ -16,11 +16,12 @@ function generateFont(cb, customConfig) {
     // Object.keys(paths).forEach(function(key) {
     //     paths[key] = path.join(__dirname, paths[key]);
     // });
-    let config = _.extend( _.clone(defaultConfig), customConfig);
+    let config = _.extend(_.clone(defaultConfig), customConfig);
+    let paths = {};
 
     ['Svg', 'Fonts', 'Scss', 'HtmlSpecimen'].forEach(function(key) {
-        config['pathSrc' + key] = path.join(config.pathSrcBase, config['pathSrc' + key] || '');
-        config['pathDest' + key] = path.join(config.pathDestBase, config['pathDest' + key] || '');
+        paths['src' + key] = path.join(config.pathSrcBase, config['pathSrc' + key] || '');
+        paths['dest' + key] = path.join(config.pathDestBase, config['pathDest' + key] || '');
     });
 
     function buildTemplates(glyphs) {
@@ -28,29 +29,29 @@ function generateFont(cb, customConfig) {
                 glyphs: glyphs,
         }, config);
 
-        let scssStream = gulp.src(config.pathSrcScss)
+        let scssStream = gulp.src(paths.srcScss)
             .pipe(consolidate('underscore', templateData))
             .pipe(insert.prepend(`//${config.generatedWarning}\n`))
-            .pipe(gulp.dest(config.pathDestScss));
+            .pipe(gulp.dest(paths.destScss));
 
-        let htmlStream = gulp.src(config.pathSrcHtmlSpecimen)
+        let htmlStream = gulp.src(paths.srcHtmlSpecimen)
             .pipe(consolidate('underscore', templateData))
             .pipe(insert.prepend(`<!--${config.generatedWarning}-->\n`))
-            .pipe(gulp.dest(config.pathDestHtmlSpecimen));
+            .pipe(gulp.dest(paths.destHtmlSpecimen));
 
         onFinished(merge(scssStream, htmlStream), function(err) {
             cb(err);
         });
     }
 
-    gulp.src([config.pathSrcSvg])
+    gulp.src([paths.srcSvg])
         .pipe(iconfont({
             fontName     : config.fontFaceName,
             appendUnicode: false,
             normalize    : true,
         }))
         .on('glyphs', buildTemplates)
-        .pipe(gulp.dest(config.pathDestFonts));
+        .pipe(gulp.dest(paths.destFonts));
 }
 
 module.exports = generateFont;
